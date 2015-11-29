@@ -13,8 +13,9 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	</head>
 	
-	<body>
-		<div ng-view></div>
+	<body ng-controller="AppController" style="background-color: #EEEEEE;">
+		<div flex="100" layout="row" ng-view ng-cloak></div>
+		
 <!-- 		AngularJS -->
 		<script type="text/javascript" src="assets/lib/angularjs/angular.min.js"></script>
 		<script type="text/javascript" src="assets/lib/angularjs/angular-animate.min.js"></script>
