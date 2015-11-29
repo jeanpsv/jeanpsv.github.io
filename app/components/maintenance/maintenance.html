@@ -1,2 +1,16 @@
-<div>
+<div flex="100" layout="row" layout-align="center center" layout-padding layout-margin>
+	<md-whiteframe flex="50" layout="row" layout-align="center center" layout-padding layout-margin layout-wrap class="md-whiteframe-2dp" style="background-color: #FFFFFF; height: 100%">
+		<div flex="100" layout="row" layout-align="center center">
+			<h1 flex="initial" class="md-body-1">em construção...</h1>
+			<md-progress-circular flex="initial" md-mode="indeterminate"></md-progress-circular>
+		</div>
+		<div flex="100" layout="row" layout-align="space-around center">
+			<md-button flex="initial" ng-repeat="contact in contacts" ng-href="{{contact.url}}" target="_blank" class="md-icon-button" aria-label="{{contact.name}}">
+				<md-tooltip md-direction="bottom">
+					{{contact.name}}
+				</md-tooltip>
+				<md-icon md-svg-src="{{contact.icon}}"></md-icon>
+			</md-button>
+		</div>
+	</md-whiteframe>
 </div>
