@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('jeanpsv.github.io', ['ngRoute'])
+angular.module('jeanpsv.github.io', ['ngRoute', 'ngMaterial'])
 .config(['$routeProvider', function($routeProvider) {
 	$routeProvider.when('/maintenance', {
 		templateUrl: 'components/maintenance/maintenance.html',
