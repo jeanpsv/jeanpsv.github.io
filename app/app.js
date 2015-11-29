@@ -12,4 +12,7 @@ angular.module('jeanpsv.github.io', ['ngRoute', 'ngMaterial'])
 }])
 .run(['$rootScope', function($rootScope) {
 	$rootScope.title = 'Jean\'s profile';
+}])
+.controller('AppController', ['$scope', '$rootScope', function($scope, $rootScope) {
+	
 }]);
